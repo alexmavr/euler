@@ -4,6 +4,10 @@ from collections import deque
 import numpy
 
 def is_prime(num):
+    if num == 1:
+        return False
+    if num == 2:
+        return True
     for i in range(2, int(ceil(sqrt(num))) + 1):
         if num % i == 0:
             return False

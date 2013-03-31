@@ -11,8 +11,7 @@ def is_palindromic(num):
 def main():
     s = 0
     for i in range(1, 1000000):
-        if is_palindromic(i):
-            if is_palindromic(int(bin(i)[2:])):
+        if is_palindromic(i) and is_palindromic(int(bin(i)[2:])):
                 s += i
     print s
 
